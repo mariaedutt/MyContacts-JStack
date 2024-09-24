@@ -31,6 +31,11 @@ class ContactsRepository {
     return row;
   }
 
+  async delete(id) {
+    const deleteOp = await db.query('DELETE FROM contacts WHERE id = $1', [id]);
+    return deleteOp;
+  }
+
   async create({
     name, email, phone, category_id,
   }) {
@@ -56,11 +61,6 @@ class ContactsRepository {
       RETURNING *
       `, [name, email, phone, category_id, id]);
     return row;
-  }
-
-  async delete(id) {
-    const deleteOp = await db.query('DELETE FROM contacts WHERE id = $1', [id]);
-    return deleteOp;
   }
 }
 
