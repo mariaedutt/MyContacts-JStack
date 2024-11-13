@@ -1,4 +1,4 @@
-MyContacts
+# MyContacts
 
 Este é o projeto MyContacts desenvolvido durante o curso JStack. A API fornece endpoints para gerenciar contatos, permitindo adicionar, visualizar, editar e excluir contatos em um banco de dados PostgreSQL.
 
