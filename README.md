@@ -27,17 +27,17 @@ cd MyContacts-JStack
 npm install
 - Configure o banco de dados PostgreSQL e adicione as variáveis de ambiente necessárias em um arquivo .env.
 
-Exemplo:
+  Exemplo:
 
-DB_HOST=localhost
+    DB_HOST=localhost
 
-DB_PORT=5432
+    DB_PORT=5432
 
-DB_USER=seu_usuario
+    DB_USER=seu_usuario
 
-DB_PASS=sua_senha
+    DB_PASS=sua_senha
 
-DB_NAME=mycontacts
+    DB_NAME=mycontacts
 
 - Inicie o servidor backend:
 npm run dev
